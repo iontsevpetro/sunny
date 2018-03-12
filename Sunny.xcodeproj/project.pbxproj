@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		418B662B3B9E97619175391C /* Pods_Sunny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8A8882CE70651A0983F2C2 /* Pods_Sunny.framework */; };
 		E01ABBFE20433D120092CC91 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01ABBFD20433D120092CC91 /* WeatherData.swift */; };
+		E055EBF72056A90C003EF33A /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E055EBF62056A90C003EF33A /* LocationData.swift */; };
 		E070C897204323FE00378BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070C896204323FE00378BF6 /* AppDelegate.swift */; };
 		E070C899204323FE00378BF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070C898204323FE00378BF6 /* ViewController.swift */; };
 		E070C89C204323FE00378BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E070C89A204323FE00378BF6 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		5994599D2AFE15575835DF88 /* Pods-Sunny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sunny.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sunny/Pods-Sunny.release.xcconfig"; sourceTree = "<group>"; };
 		BE8A8882CE70651A0983F2C2 /* Pods_Sunny.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sunny.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01ABBFD20433D120092CC91 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		E055EBF62056A90C003EF33A /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
 		E070C893204323FE00378BF6 /* Sunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E070C896204323FE00378BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E070C898204323FE00378BF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				E070C89F204323FE00378BF6 /* LaunchScreen.storyboard */,
 				E070C8A2204323FE00378BF6 /* Info.plist */,
 				E01ABBFD20433D120092CC91 /* WeatherData.swift */,
+				E055EBF62056A90C003EF33A /* LocationData.swift */,
 			);
 			path = Sunny;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E055EBF72056A90C003EF33A /* LocationData.swift in Sources */,
 				E070C899204323FE00378BF6 /* ViewController.swift in Sources */,
 				E01ABBFE20433D120092CC91 /* WeatherData.swift in Sources */,
 				E070C897204323FE00378BF6 /* AppDelegate.swift in Sources */,

@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Let us track your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Sunny need to access your location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location</string>
 	<key>UILaunchStoryboardName</key>
