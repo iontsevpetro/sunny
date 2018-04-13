@@ -22,6 +22,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var iconLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             DispatchQueue.main.async {
                 self.summaryLabel.text = currentWeather.summary
                 self.tempLabel.text = String(currentWeather.temperature ?? 0) + "℃"
+                self.iconLabel.text = currentWeather.icon
             }
         }
         
