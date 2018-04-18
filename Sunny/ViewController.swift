@@ -65,9 +65,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         geocode(latitude: lat, longitude: long) { placemark, error in
             guard let placemark = placemark, error == nil else { return }
-            // you should always update your UI in the main thread
             DispatchQueue.main.async {
-                //  update UI here
                 print("city:", placemark.locality ?? "")
                 self.cityLabel.text = placemark.locality
             }
