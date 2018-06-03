@@ -22,6 +22,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var summaryLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var iconLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,17 +56,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 return
             }
             let currentWeather = Weather(weatherDictionary: currentWeatherDictionary)
+            // update UI in the main thread
             DispatchQueue.main.async {
                 self.summaryLabel.text = currentWeather.summary
                 self.tempLabel.text = String(currentWeather.temperature ?? 0) + "℃"
+                self.iconLabel.text = currentWeather.icon
             }
         }
         
         geocode(latitude: lat, longitude: long) { placemark, error in
             guard let placemark = placemark, error == nil else { return }
-            // you should always update your UI in the main thread
+            // update UI in the main thread
             DispatchQueue.main.async {
-                //  update UI here
                 print("city:", placemark.locality ?? "")
                 self.cityLabel.text = placemark.locality
             }

@@ -36,6 +36,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNQ-hO-B9j">
+                                <rect key="frame" x="120" y="335" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -48,12 +55,12 @@
                             <constraint firstItem="gQw-8I-iX3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="hqF-FX-Hwd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VzI-Lf-LjV" secondAttribute="trailing" constant="110" id="kMf-E0-l1I"/>
                             <constraint firstItem="g5i-k3-Mfh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="kQK-NW-eAE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g5i-k3-Mfh" secondAttribute="bottom" constant="268" id="qPc-tO-fdC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="gQw-8I-iX3" id="Y06-Kc-YD0"/>
+                        <outlet property="iconLabel" destination="uNQ-hO-B9j" id="c4B-C9-MBt"/>
                         <outlet property="summaryLabel" destination="g5i-k3-Mfh" id="g4p-ia-Ryg"/>
                         <outlet property="tempLabel" destination="VzI-Lf-LjV" id="1WV-4K-YMF"/>
                     </connections>
